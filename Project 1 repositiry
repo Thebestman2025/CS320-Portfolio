@@ -1,1 +1,57 @@
+Contact Service Application
+Overview
+This project involves the development of a mobile application's Contact Service. The application is designed to manage contact information by creating, updating, and deleting contact entries. The primary focus is to ensure the functionality and reliability of the application through rigorous unit testing using JUnit. This milestone project does not include a user interface or database but instead utilizes in-memory data structures to store and manage contact data.
 
+Purpose
+The goal of this project is to implement a robust contact management system that adheres to the customer-provided requirements. This includes creating a Contact class and a ContactService class, along with unit tests to validate functionality.
+
+Features
+Contact Class
+The Contact class represents a contact entry with the following attributes and constraints:
+
+Contact ID
+Must be unique and no longer than 10 characters.
+Cannot be null or modified after creation.
+First Name
+Maximum length: 10 characters.
+Cannot be null.
+Last Name
+Maximum length: 10 characters.
+Cannot be null.
+Phone Number
+Exactly 10 digits.
+Cannot be null.
+Address
+Maximum length: 30 characters.
+Cannot be null.
+Contact Service
+The ContactService class provides functionality for managing contacts:
+
+Add Contacts
+Allows the addition of contacts with a unique ID.
+Delete Contacts
+Deletes a contact using its unique ID.
+Update Contact Fields
+Allows updating of the following fields by ID:
+First Name
+Last Name
+Phone Number
+Address
+Testing
+Testing is a critical part of the project to ensure functionality and compliance with requirements. Unit tests are created using JUnit to:
+
+Verify constraints on the Contact class attributes (e.g., ID uniqueness, field length limits).
+Test ContactService methods for adding, updating, and deleting contacts.
+Ensure invalid operations, such as adding a contact with a duplicate ID or updating a non-existent contact, are handled correctly.
+How It Works
+In-Memory Data Structure:
+Contacts are stored in an in-memory data structure (e.g., a HashMap) to simulate storage without the need for a database.
+
+No UI:
+This milestone focuses solely on backend functionality and testing.
+
+JUnit Testing:
+Comprehensive test cases validate the functionality of each requirement, ensuring that all constraints are enforced and operations behave as expected.
+
+Reflection
+This project demonstrates the ability to design and implement a backend service while adhering to strict customer requirements. By focusing on testing and quality assurance, this project highlights the importance of writing reliable, maintainable, and secure code.
